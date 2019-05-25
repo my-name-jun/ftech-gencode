@@ -1,0 +1,153 @@
+@import "../../lib/common.scss";
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #F1F1F1;
+  padding-bottom: 3%;
+}
+.main1{
+  width: 93%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 3%;
+}
+.bank-header
+{
+  width: 100%;
+}
+.main2{
+  width: 93%;
+  margin: 0 auto;
+  margin-top: 4%;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.insure{
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 2px solid #FAFAFA;
+  padding: 5% 0 5% 10%;
+}
+.insure label{
+  font-size: 1.5em;
+  color: #7C7C85;
+  letter-spacing: 0.2em;
+}
+.insure button{
+  width: 51%;
+  height: auto;
+  background-color: #E9F8F1;
+  margin-left: 5%;
+  font-size: 1.5em;
+}
+.responsibity{
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 2px solid #FAFAFA;
+  padding: 5% 5% 5% 2%;
+}
+.r_title{
+  width: 90%;
+  margin-left: 12%;
+}
+.r_title span{
+  font-size: 2em;
+  color: #3E3A39;
+}
+.r_content{
+  width: 98%;
+  padding: 7% 0 1% 0;
+}
+.r_content button{
+  width: 29%;
+  height: auto;
+  background-color: #E9F8F1;
+  margin-left: 12%;
+  padding: 1%;
+  font-size: 1.5em;
+  line-height: 1.6em;
+}
+.r_content img{
+  margin-left: 10%;
+  width: 19%;
+}
+.r_content_span{
+  font-size: 1.5em;
+  color: #7C7C85;
+}
+.more{
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+.more_span{
+  color: #BBBBC0;
+  font-size: 1.3em;
+  line-height: 3.5em;
+}
+.main3{
+  width: 93%;
+  margin: 0 auto;
+  margin-top: 4%;
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: 4%;
+  border-radius: 10px;
+}
+.main3 span{
+  font-size: 1.5em;
+  color: #9B9BA3;
+}
+.main3 strong{
+  font-size: 3.5em;
+}
+.main3 button{
+  background-color: #5AB64B;
+  margin-top: 3%;
+  width: 90%;
+  color: white;
+  font-size: 1.8em;
+  padding: 3%;
+}
+
+//modal
+.clause{
+  margin: auto;
+  margin-top: 57%;
+  width: 80%;
+  padding: 5%;
+  background-color: white;
+  text-align: justify;
+  font-size: 1.6em;
+  border-radius: 5px;
+}
+.select0{
+  background-color: white;
+}
+li{
+  list-style-type: none;
+  font-size: 1.7em;
+  padding: 7%;
+  text-align: center;
+  border-bottom: 2px solid #FAFAFA;
+  color: #575761;
+}
+.down{
+  margin-left: 5%;
+  width: 15%;
+}
+.age{
+  background-color: white;
+  width: 40%;
+  margin: 50% auto;
+  border-radius: 10px;
+}
+.amount{
+  background-color: white;
+  width: 40%;
+  margin: 15% auto;
+  border-radius: 10px;
+}
+//GEN_SASS

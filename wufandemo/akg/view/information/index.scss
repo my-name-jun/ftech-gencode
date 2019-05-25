@@ -1,0 +1,202 @@
+@import "../../lib/common.scss";
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  background-color: #F1F1F1;
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+.main1{
+  width: 93%;
+  margin: 0 auto;
+  height: 30%;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.title{
+  width: 100%;
+  height: 20%;
+  border-bottom: 1px solid #E0E0E0;
+  padding-left: 4%;
+}
+.title img{
+  width: 1.7%;
+  height: auto;
+}
+.title span{
+  font-size: 1.8em;
+  line-height: 2.6em;
+  color: #66B956;
+  vertical-align: middle;
+  margin-left: 2%;
+}
+.name{
+  width: 100%;
+  height: 20%;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 2% 9% 1% 7%;
+}
+.name label{
+  font-size: 1.6em;
+  letter-spacing: 2em;
+  width: 40%;
+  height: auto;
+  font-weight: 500;
+  line-height: 2.2em;
+}
+.name_div{
+  float: right;
+  background-color: #E9F8F1;
+  width: 60%;
+  height: 85%;
+  line-height: 2.6em;
+  border-radius: 5px;
+  padding-left: 4%;
+}
+.name input{
+  outline: none;
+  background-color: #E9F8F1;
+  width: 95%;
+  height: auto;
+  border: 0;
+  font-size: 1.6em;
+}
+.ID{
+  width: 100%;
+  height: 20%;
+  border-bottom: 1px solid #E0E0E0;
+  padding-left: 7%;
+  padding-right: 20%;
+  padding-top: 2%;
+}
+.phone{
+  width: 100%;
+  height: 20%;
+  border-bottom: 1px solid #E0E0E0;
+  padding-left: 7%;
+  padding-right: 20%;
+  padding-top: 2%;
+}
+.main2{
+  width: 93%;
+  margin: 0 auto;
+  height: 23%;
+  background-color: #FFFFFF;
+  margin-top: 3%;
+  border-radius: 10px;
+}
+.main3{
+  width: 93%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  margin-top: 3%;
+  border-radius: 10px;
+}
+.main3 > p{
+  width: 92%;
+  border-bottom: 1px solid #E0E0E0;
+  font-size: 1.6em;
+  letter-spacing: 0.1em;
+  text-align: justify;
+  padding: 5%;
+  margin-bottom: 0;
+}
+.main3 > p > span{
+  color: #66B956;
+}
+.judge{
+  width: 60%;
+  line-height: 4em;
+  padding: 0 5% 1% 5%;
+}
+.yes{
+  width: 50%;
+  display: inline-block;
+}
+.yes img{
+  width: 33%;
+}
+.yes span{
+  font-size: 1.8em;
+  vertical-align: middle;
+  margin-left: 5%;
+}
+.no img{
+  width: 33%;
+}
+.no span{
+  font-size: 1.8em;
+  vertical-align: middle;
+  margin-left: 5%;
+}
+.no{
+  width: 50%;
+  display: inline-block;
+}
+.main4{
+  width: 93%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  margin-top: 3%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 3% 0 4% 0;
+}
+.main4 span{
+  font-size: 1.76em;
+  color: #9B9BA3;
+}
+.main4 strong{
+  font-size: 4em;
+}
+.main4 button{
+  background-color: #5AB64B;
+  width: 80%;
+  color: white;
+  font-size: 1.8em;
+  padding: 3%;
+}
+.age{
+  background-color: white;
+  width: 40%;
+  margin: 50% auto;
+  border-radius: 10px;
+}
+.down{
+  margin-left: 5%;
+  width: 25%;
+}
+.select0{
+  background-color: white;
+}
+li{
+  list-style-type: none;
+  font-size: 1.7em;
+  padding: 7%;
+  text-align: center;
+  border-bottom: 2px solid #FAFAFA;
+  color: #575761;
+}
+.updata_div{
+  float: right;
+  width: 34%;
+  height: 85%;
+  line-height: 2.6em;
+  border-radius: 5px;
+  padding-left: 4%;
+}
+.updata_div button{
+  background-color: #E9F8F1;
+  color: #c0c0c0;
+  font-size: 1.6em;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+
+  color: #C0C0C0;
+
+}
+
+//GEN_SASS

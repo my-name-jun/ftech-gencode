@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>information</title>
+</head>
+<body :controller="vm" class="ms-controller">
+<!-- GEN_COMPONENT -->
+    <div class="body-main">
+        <div class="main1">
+                <div class="title">
+                    <img :attr="{src:@title_1}" alt="">
+                    <span><b>投保人信息</b></span>
+                </div>
+                <div class="name">
+                    <label>姓名</label>
+                    <div id="name_div" class="name_div">
+                        <input type="text" id="name" placeholder="请输入中文姓名" :duplex="@name">
+                    </div>
+                </div>
+                <div class="name">
+                    <label style="letter-spacing: 0">身份证号</label>
+                    <div id="ID_div" class="name_div">
+                        <input type="text" id="ID" placeholder="请输入18位身份证号码" :duplex="@ID">
+                    </div>
+                </div>
+                <div class="name">
+                    <label style="letter-spacing: 0">手机号码</label>
+                    <div id="phone_div" class="name_div">
+                        <input type="text" id="phone" placeholder="请填写11位手机号码" :duplex="@phone">
+                    </div>
+                </div>
+                <div class="name" style="border-bottom: 0">
+                    <label style="letter-spacing: 0">邮箱号码</label>
+                    <div id="email_div" class="name_div">
+                        <input type="text" id="email" placeholder="用于接收电子保单" :duplex="@email">
+                    </div>
+                </div>
+        </div>
+        <div class="main2">
+            <div class="title" style="height: 23%">
+                <img :attr="{src:@title_1}" alt="">
+                <span><b>被保人信息</b></span>
+            </div>
+            <div class="name" style="height: 25%">
+                <label style="letter-spacing: 0">与被保人关系</label>
+                <div class="updata_div">
+                    <button class="btn" type="button" id="age" data-toggle="modal" style="outline: none"><span id="ff" ms-text="@relationship | uppercase"></span>
+                        <span>
+                            <img :attr="{src:@down}" alt="" class="down">
+                        </span></button>
+                    <div class="modal fade" id="select0" tabindex="-1" role="dialog" aria-labelledby="select0" aria-hidden="true">
+                        <ul class="age">
+                            <li data-toggle="modal"  data-dismiss="modal" :for='(index,item) in @relation'
+                                :attr="{value:@item.name}">
+                                {{@item.name}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="name" style="height: 25%">
+                <label>姓名</label>
+                <div id="Bname_div" class="name_div">
+                    <input type="text" id="Bname" placeholder="请输入中文姓名" :duplex="@Bname">
+                </div>
+            </div>
+            <div class="name" style="height: 25%; border-bottom: 0">
+                <label style="letter-spacing: 0">身份证号</label>
+                <div id="BID_div" class="name_div">
+                    <input type="text" id="BID" placeholder="请填写18位身份证号码" :duplex="@BID">
+                </div>
+            </div>
+        </div>
+        <div class="main3">
+            <p>重要告知:子女在我公司及其他保险公司已拥有有效的人身保险和正在申请的人身保险的累计身故保险金额
+                <span>没有超过</span>
+                中国保险监督管理机构规定的人民币<span>50万元</span>
+                限额。
+            </p>
+            <div class="judge">
+                <div class="yes">
+                    <img :if="!@isTick" :attr="{src:@judge1}" alt="" class="judge_1">
+                    <img onclick="" :click="@tick" :if="@isTick" :attr="{src:@judge2}" alt="" class="judge_1">
+                    <span>是</span>
+                </div>
+                <div class="no">
+                    <img onclick="" :click="@tick" :if="!@isTick" :attr="{src:@judge2}" alt="" class="judge_1">
+                    <img :if="@isTick" :attr="{src:@judge1}" alt="" class="judge_1">
+                    <span>否</span>
+                </div>
+            </div>
+        </div>
+        <div class="main4">
+            <span>保费合计</span><br>
+            <strong>￥7.6</strong><br>
+            <button onclick="" :click="@anyFuncti" type="button" class="btn">下一步</button>
+        </div>
+    </div>
+    <!-- GEN_FOOTER -->
+</body>
+
+</html>
+

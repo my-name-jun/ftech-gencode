@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>verify</title>
+</head>
+<body :controller="vm" class="ms-controller">
+<!-- GEN_COMPONENT -->
+<button class="btn plan" style="outline: none" type="button" onclick="" :click="@t_Tick" data-toggle="collapse" data-target="#plan" aria-expanded="false" aria-controls="plan">
+    <div class="title_left">
+        <img :attr="{src:@title_1}" alt="">
+        <b>投保计划</b>
+    </div>
+    <div class="title_right">
+        <img :if="!@titleTick" :attr="{src:@title_right}" alt="">
+        <img :if="@titleTick" :attr="{src:@title_right1}" alt="" style="width: 20%">
+    </div>
+</button>
+<div class="collapse" id="plan">
+    <div class="well plan_content">
+        <div class="content_left">
+            <span>保险起期</span>
+        </div>
+        <div class="content_right">
+            2016-05-26&emsp;00:00:00
+        </div>
+    </div>
+    <div class="well plan_content">
+        <div class="content_left">
+            <span>保险止期</span>
+        </div>
+        <div class="content_right">
+            2017-05-25&emsp;23:59:59
+        </div>
+    </div>
+</div>
+
+<button class="btn plan" style="outline: none" type="button" onclick="" :click="@t_Tick1" data-toggle="collapse" data-target="#T_information" aria-expanded="false" aria-controls="T_information">
+    <div class="title_left">
+        <img :attr="{src:@title_1}" alt="">
+        <b>投保人信息</b>
+    </div>
+    <div class="title_right">
+        <img :if="!@titleTick1" :attr="{src:@title_right}" alt="">
+        <img :if="@titleTick1" :attr="{src:@title_right1}" alt="" style="width: 20%">
+    </div>
+</button>
+<div class="collapse" id="T_information">
+    <div class="well plan_content">
+        <div class="content_left">
+            <span>姓&emsp;&emsp;名:</span>
+        </div>
+        <div class="content_right">
+            {{@name}}
+        </div>
+    </div><div class="well plan_content">
+    <div class="content_left">
+        <span>身份证号:</span>
+    </div>
+    <div class="content_right">
+        {{@ID}}
+    </div>
+</div><div class="well plan_content">
+    <div class="content_left">
+        <span>手机号码:</span>
+    </div>
+    <div class="content_right">
+        {{@phone}}
+
+    </div>
+</div><div class="well plan_content">
+    <div class="content_left">
+        <span>邮箱地址:</span>
+    </div>
+    <div class="content_right">
+        {{@email}}
+    </div>
+</div>
+</div>
+
+<button class="btn plan" style="outline: none" type="button" onclick="" :click="@t_Tick2" data-toggle="collapse" data-target="#b_information" aria-expanded="false" aria-controls="b_information">
+    <div class="title_left">
+        <img :attr="{src:@title_1}" alt="">
+        <b>被保人信息</b>
+    </div>
+    <div class="title_right">
+        <img :if="!@titleTick2" :attr="{src:@title_right}" alt="">
+        <img :if="@titleTick2" :attr="{src:@title_right1}" alt="" style="width: 20%">
+    </div>
+</button>
+<div class="collapse" id="b_information">
+    <div class="well plan_content">
+        <div class="content_left">
+            <span>与投保人关系:</span>
+        </div>
+        <div class="content_right">
+            {{@Brelationship}}
+        </div>
+    </div><div class="well plan_content">
+    <div class="content_left">
+        <span>姓&emsp;&emsp;名:</span>
+    </div>
+    <div class="content_right">
+        {{@Bname}}
+    </div>
+    </div>
+    <div class="well plan_content">
+    <div class="content_left">
+        <span>身份证号:</span>
+    </div>
+    <div class="content_right">
+        {{@BID}}
+    </div>
+    </div>
+    <div class="well plan_content">
+        <div class="content_left">
+            <span>手机号码:</span>
+        </div>
+        <div class="content_right">
+            {{@phone}}
+        </div>
+    </div>
+</div>
+
+<button class="btn plan" style="outline: none" type="button">
+    <div class="title_left">
+        <img :attr="{src:@title_1}" alt="">
+        <b>受益人</b>
+    </div>
+    <div class="title_right content">
+        法定受益人
+    </div>
+</button>
+
+<button class="btn plan" style="outline: none" type="button" onclick="" :click="@t_Tick3" data-toggle="collapse" data-target="#b_information2" aria-expanded="false" aria-controls="b_information2">
+    <div class="title_left">
+        <img :attr="{src:@title_1}" alt="">
+        <b>被保人信息</b>
+    </div>
+    <div class="title_right">
+        <img :if="!@titleTick3" :attr="{src:@title_right}" alt="">
+        <img :if="@titleTick3" :attr="{src:@title_right1}" alt="" style="width: 20%">
+    </div>
+</button>
+<div class="collapse" id="b_information2">
+    <div class="well plan_content">
+        <div class="content_left" style="width: 73%">
+            <span>陆路公共交通意外身故伤残</span>
+        </div>
+        <div class="content_right" style="width: 25%">
+            100万元
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>保费</p>
+    <strong>￥76</strong>
+    <div>
+        <img onclick="" :click="@tick" :if="!@isTick" :attr="{src:@footer17}" alt="">
+        <img onclick="" :click="@tick" :if="@isTick" :attr="{src:@footer18}" alt="">
+        <span>我已阅读并同意<span  onclick="" :click="@anyFuncti1" style="color: #0E87C8">《保险须知》</span>及<span style="color: #0E87C8">《保险条款》</span></span>
+    </div>
+    <button type="button" onclick="" :click="@anyFuncti" style="outline: none" class="btn">立即支付</button>
+</div>
+    <!-- GEN_FOOTER -->
+</body>
+
+</html>
+

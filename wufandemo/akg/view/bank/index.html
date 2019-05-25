@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>bank</title>
+</head>
+<body :controller="vm" class="">
+<!-- GEN_COMPONENT -->
+    <div class="">
+        <div class="main1">
+            <img :attr="{src:@bank_header}" alt="" class="bank-header">
+        </div>
+        <div class="main2">
+            <div class="insure">
+                <div class="dropdown">
+                    <label for="age">为他/她投保：</label>
+                    <button class="btn" type="button" id="age" data-toggle="modal" style="outline: none" ><span id="Sage" ms-text="@age_select"></span>
+                        <span>
+                            <img :attr="{src:@down}" alt="" class="down">
+                        </span></button>
+                    <div class="modal fade" id="select0" tabindex="-1" role="dialog" aria-labelledby="select0" aria-hidden="true">
+                        <ul class="age">
+                            <li data-toggle="modal"  data-dismiss="modal" :for='(index,item) in @age'
+                                    :attr="{value:@item.name}">
+                                {{@item.name}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="responsibity">
+                <div class="r_title">
+                    <span><strong>保险责任</strong></span><span style="margin-left: 36%"><strong>保险金额</strong></span>
+                </div>
+                <div class="r_content">
+                    <span class="r_content_span">陆路公共交通意外身故/伤残</span>
+                    <button class="btn" type="button" id="amount" data-toggle="modal" style="outline: none"><span id="Samount" ms-text="@amount_select"></span>
+                        <span>
+                            <img :attr="{src:@down}" alt="" class="down">
+                        </span></button>
+                    <div class="modal fade" id="select1" tabindex="-1" role="dialog" aria-labelledby="select1" aria-hidden="true">
+                        <ul class="amount">
+                            <li data-toggle="modal"  data-dismiss="modal" :for='(index,item) in @amount'
+                                :attr="{value:@item.name}">
+                                {{@item.name}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <span class="more_span">更多险情，请阅读<span onclick="" :click="@anyFuncti1" style="color: #0F88C8">《投保须知》</span>和<span data-toggle="modal" id="clause" style="color: #0F88C8">《保险条款》</span></span>
+            </div>
+
+            <div class="modal fade" id="clause_modal" tabindex="-1" role="dialog" aria-labelledby="clause" aria-hidden="true">
+                <p class="clause">
+                    在保险期间内，如保险人以乘客身份乘坐商业运营的汽车、火车、轻轨地铁等间因意外伤害事故身故/残疾，我们将按保险合同及条款给付保险金。
+                </p>
+            </div>
+        </div>
+        <div class="main3">
+            <span>招行专属价</span><br>
+            <strong>￥7.6</strong><br>
+            <button onclick="" :click="@anyFuncti" type="button" class="btn">立即投保</button>
+        </div>
+    </div>
+    <!-- GEN_FOOTER -->
+</body>
+
+</html>
+

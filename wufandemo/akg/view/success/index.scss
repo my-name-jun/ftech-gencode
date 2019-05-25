@@ -1,0 +1,32 @@
+@import "../../lib/common.scss";
+body{
+  background-color: #F1F1F1;
+}
+.header{
+  margin: 20% auto 5%;
+  width: 20%;
+  display: block;
+}
+.title{
+  text-align: center;
+  font-size: 4em;
+  color: #5AB64B;
+  display: block;
+  margin: 15% auto 5%;
+}
+.content{
+  text-align: left;
+  width: 71%;
+  margin: 1% auto;
+  font-size: 1.7em;
+}
+.footer{
+  padding: 3%;
+  width: 82%;
+  margin: 35% auto auto 9%;
+  font-size: 1.7em;
+  background-color: #5AB64B;
+  color: white;
+}
+
+//GEN_SASS
